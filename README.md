@@ -31,6 +31,12 @@ export PATH="$HOME/.local/bin:$PATH"
 2. Create `.venv`.
 3. Run `uv sync` from `pyproject.toml`.
 
+Note: this repo is script-oriented (not shipped as a Python package). `pyproject.toml` sets:
+
+- `[tool.uv] package = false`
+
+so `uv sync` installs dependencies without trying to build/install the local project as an editable wheel.
+
 Run scripts with uv-managed environment:
 
 ```bash
