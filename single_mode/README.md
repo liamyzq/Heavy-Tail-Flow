@@ -2,7 +2,7 @@
 
 Script:
 
-- `single_mode/heavy_tail_sample_complexity.py`
+- `single_mode/heavy_tail_sample_complexity_single_mode.py`
 
 This script trains flow-matching velocity models for a **single-mode** Student-t target, compares them against a Monte Carlo ground-truth velocity field, and generates diagnostics/ablation plots.
 
@@ -231,18 +231,18 @@ Ablation configs used:
 ### Default run
 
 ```bash
-python single_mode/heavy_tail_sample_complexity.py
+python single_mode/heavy_tail_sample_complexity_single_mode.py
 ```
 
 ### Beta time sampling run
 
 ```bash
-python single_mode/heavy_tail_sample_complexity.py \
+python single_mode/heavy_tail_sample_complexity_single_mode.py \
   --time_sampling beta --beta_alpha 2 --beta_beta 5
 ```
 
 ### Quick sanity run
 
 ```bash
-python single_mode/heavy_tail_sample_complexity.py --quick --max_steps 3000 --min_steps 500
+python single_mode/heavy_tail_sample_complexity_single_mode.py --quick --max_steps 3000 --min_steps 500
 ```

@@ -1,0 +1,3 @@
+# Ignore generated output directories anywhere in the repo.
+output*/
+**/output*/
